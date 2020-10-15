@@ -11,11 +11,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
-	if (n == 1) {
-		cout << 1 << '\n';
-		return 0;
-	}
-	int cnt = 1, mx = 0;
+	int cnt = 1, mx = 1;
 	for (int i = 1; i < n; i++) {
 		if (a[i] >= a[i - 1]) {
 			cnt++;
